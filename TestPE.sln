@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{E13CB210-46B6-4D64-96E9-F2F40A2C067A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PEWinApp", "PEWinApp\PEWinApp.csproj", "{104349C2-C2BE-428A-9474-3001FD37E0D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13CB210-46B6-4D64-96E9-F2F40A2C067A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13CB210-46B6-4D64-96E9-F2F40A2C067A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13CB210-46B6-4D64-96E9-F2F40A2C067A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13CB210-46B6-4D64-96E9-F2F40A2C067A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104349C2-C2BE-428A-9474-3001FD37E0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104349C2-C2BE-428A-9474-3001FD37E0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104349C2-C2BE-428A-9474-3001FD37E0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104349C2-C2BE-428A-9474-3001FD37E0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EC94EF9-B239-4B9A-9EAD-5D855AAB054A}
+	EndGlobalSection
+EndGlobal
