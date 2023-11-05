@@ -28,4 +28,10 @@ public partial class Product
     public virtual Category? Category { get; set; }
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+
+    public override string? ToString()
+    {
+        return $"{ProductId}\t{ProductName}\t{SupplierId}\t{CategoryId}" +
+            $"\t{QuantityPerUnit}\t{UnitPrice}\t{UnitsInStock}\t{UnitsOnOrder}\t{ReorderLevel}\t{Discontinued}";
+    }
 }

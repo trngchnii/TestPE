@@ -33,6 +33,11 @@ namespace TestLibrary.Data_Access
             return context.Products.Include(x=> x.Category).ToList();
         }
 
+        public Product GetProductByID(int pid)
+        {
+            return context.Products.Include(x=>x.OrderDetails).FirstOrDefault(x => x.ProductId == pid);
+        }
+
         public void AddProduct(Product product)
         {
             context.Products.Add(product);
@@ -49,11 +54,16 @@ namespace TestLibrary.Data_Access
                 context.SaveChanges();
             }
         }
-        public void RemoveProduct(Product product)
+        public void RemoveProduct(int productid)
         {
-            Product product1 = context.Products.FirstOrDefault(p => p.ProductId == product.ProductId);
-            context.Products.Remove(product1);
-            context.SaveChanges();
+            Product product1 = GetProductByID(productid);
+            if(product1 != null)
+            {
+                context.OrderDetails.RemoveRange(product1.OrderDetails);
+                context.Products.Remove(product1);
+                context.SaveChanges();
+            }
+
         }
 
     }

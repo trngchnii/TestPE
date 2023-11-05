@@ -10,8 +10,9 @@ namespace TestLibrary.Data_Access.Repository
     public interface IProductRepository
     {
         IEnumerable<Product> GetProducts();
+        Product GetProductByID(int productID);
         void InsertProduct(Product product);
         void UpdateProduct(Product product);
-        void RemoveProduct(Product product);
+        void RemoveProduct(int productID);
     }
 }
